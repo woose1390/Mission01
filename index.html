@@ -7,24 +7,29 @@
     <title>Document</title>
     <style type="text/css">
     body{
-        background-color: #fff;
+        background-color: #000
         }
+    
+    .head{
+       display:flex;
         
+        
+    }
     .logo{
         width: 200px;
         height: 200px;
-        border: 1px solid #000;
+        border: 1px solid #fff;
         display: inline-block;
-        color: #000;
+        color: #fff;
+        position: fixed; top:20px;  left: 20px;
         }
 
     .tname{
-        width: 880px ;
-        height: 200px;
-        border: 1px solid #000;
+        
         display: inline-block;
-        text-align: center;
-        color: #000;
+        margin: auto;
+        
+        
         }
         
     
@@ -41,23 +46,25 @@
         padding: 20px ;
         text-align: center;
         border-radius: 20px;
-        border: 1px solid #000;
+        border: 5px solid #fff;
+        border-image: linear-gradient(to right , rgb(0, 153, 255), rgb(255, 0, 200));
+        border-image-slice: 1;
         transition: flex 0.2s, color 0.2s; 
         
         }
 
     .team4 li:hover{
-        flex: 0 0 300px;
-        border-color: #000;
+        flex: 0 0 400px;
+        border-color: #fff;
         cursor: pointer; 
         target:'#';
-        color: #000;
+        color: #fff;
         
         }
         
     .team4 a{   
         text-decoration: none;
-        color: #000;
+        color: #fff;
         display: block;
         ;
         }
@@ -68,8 +75,8 @@
 </head>
 <body>
     <div class="head">
-        <p class="logo">로고</p>
-        <p class="tname">팀명</p>
+        <p class="logo">로고</p> 
+        <p  class="tname" ><video autoplay muted width="800px"  loop><source src="resources/video/neonsign.webm" alt="video" type="video/webm"></video></p>
     </div>
     <div class="team4">
     <li><a href="#">우정현</a></li>

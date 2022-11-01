@@ -7,29 +7,31 @@
     <title>Document</title>
     <style type="text/css">
     body{
-        background-color: #000
+        background-color: #FFF;
+      
+       
+        
         }
-    
     .head{
-       display:flex;
-        
-        
+        display: flex;
     }
     .logo{
         width: 200px;
         height: 200px;
-        border: 1px solid #fff;
+        border: 1px solid #000;
         display: inline-block;
-        color: #fff;
-        position: fixed; top:20px;  left: 20px;
+        color: #000;
         }
 
     .tname{
-        
+        width: 1000px ;
+        height: 200px;
         display: inline-block;
-        margin: auto;
-        
-        
+        text-align: center;
+        color: #000;
+        background: url(resources/images/gstonw.png) no-repeat;
+        background-size: contain;
+        background-position: 550px 50%;
         }
         
     
@@ -40,43 +42,56 @@
     .team4 li {
         list-style-type: none;
         flex: 1;
-        -webkit-box-flex: 1;
-        width: 180px;
+        -webkit-box-flex: 1 1 200px;
+        width: 100px;
         margin: 15px;
         padding: 20px ;
         text-align: center;
         border-radius: 20px;
-        border: 5px solid #fff;
-        border-image: linear-gradient(to right , rgb(0, 153, 255), rgb(255, 0, 200));
-        border-image-slice: 1;
+        border: 1px solid #000;
         transition: flex 0.2s, color 0.2s; 
         
         }
 
     .team4 li:hover{
         flex: 0 0 400px;
-        border-color: #fff;
+        border-color: #000;
         cursor: pointer; 
         target:'#';
-        color: #fff;
+        color: #000;
         
         }
         
+    
     .team4 a{   
         text-decoration: none;
-        color: #fff;
+        color: #000;
         display: block;
         ;
         }
- 
+        
+    .space{
+        display: block;
+        width: 100%;
+        height: 290px;
+        border: 
+    }
+    
+    .bg {
+        height: 300px;
+        background: url(resources/images/1dyf_md7k_180512.jpg) no-repeat;
+        background-size: contain;
+        
+        background-position: 5% 90%;
+    }
    
     
     </style>
 </head>
 <body>
     <div class="head">
-        <p class="logo">로고</p> 
-        <p  class="tname" ><video autoplay muted width="800px"  loop><source src="resources/video/neonsign.webm" alt="video" type="video/webm"></video></p>
+        <p class="logo">로고</p>
+        <p class="tname"></p>
     </div>
     <div class="team4">
     <li><a href="#">우정현</a></li>
@@ -84,7 +99,9 @@
     <li><a href="#">박찬형</a></li>
     <li><a href="#">조채이</a></li>
     <li><a href="#">박규남</a></li>
-    </p>
 </div>
+<div class="space"></div>
+<div class="bg" ></div>
+
 </body>
 </html>
